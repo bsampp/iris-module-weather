@@ -8,7 +8,8 @@
         "parent_public_key": null,
         "description": "Consulta localização e previsão do tempo nos endpoints públicos do Open-Meteo.",
         "readme": "README.md",
-        "is_executable": true
+        "is_executable": true,
+        "author": "bsampp"
     },
     "runtime": {
         "type": "python",

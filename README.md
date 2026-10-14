@@ -8,16 +8,17 @@ Requer a versão experimental da IRIS com **Comunidade > Catálogo > Instalar po
 fonte**, Git instalado e internet. O runtime usa `httpx`, já incluído nas
 dependências atuais da IRIS; o instalador não instala dependências adicionais.
 
-No modal, informe:
+No modal, informe `bsampp/iris-module-weather` (ou acrescente `#v0.1.1`).
+Também é possível usar a URL completa:
 
 ```text
-https://github.com/bsampp/iris-module-weather.git#v0.1.0
+https://github.com/bsampp/iris-module-weather.git#v0.1.1
 ```
 
 Ou, no ambiente da IRIS:
 
 ```powershell
-python -m modules install "https://github.com/bsampp/iris-module-weather.git#v0.1.0"
+python -m modules install "https://github.com/bsampp/iris-module-weather.git#v0.1.1"
 ```
 
 Se o repositório estiver privado, clone com autenticação separadamente e informe
@@ -49,6 +50,13 @@ python -m unittest discover -s tests -v
 Os testes simulam as respostas HTTP e não consultam a internet. Na IRIS,
 `python -m modules validate <pasta>` valida sem importar código e
 `python -m modules check <pasta>` também importa o runtime.
+
+## Autoria
+
+O manifesto declara `module.author` como `bsampp`. A IRIS exibe esse campo no
+catálogo e na lista de instalados; o dono de um fork não substitui a autoria
+automaticamente. Instalações da versão anterior preservam seus arquivos e
+precisam ser reinstaladas para receber a metadata de autor desta versão.
 
 ## Origem
 
